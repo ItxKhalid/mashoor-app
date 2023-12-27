@@ -94,8 +94,7 @@ class CategoryScreen extends StatelessWidget {
                                         fit: BoxFit.fill,
                                         child: CustomImage(
                                           fit: BoxFit.fill,
-                                          image:
-                                              '${Get.find<SplashController>().configModel.baseUrls.categoryImageUrl}/${catController.categoryList[index].image}',
+                                          image: '${Get.find<SplashController>().configModel.baseUrls.categoryImageUrl}/${catController.categoryList[index].image}',
                                         ),
                                       ),
                                     ),

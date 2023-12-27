@@ -9,6 +9,7 @@ import 'package:efood_multivendor/controller/wishlist_controller.dart';
 import 'package:efood_multivendor/helper/notification_helper.dart';
 import 'package:efood_multivendor/helper/responsive_helper.dart';
 import 'package:efood_multivendor/helper/route_helper.dart';
+import 'package:efood_multivendor/test.dart';
 import 'package:efood_multivendor/theme/dark_theme.dart';
 import 'package:efood_multivendor/theme/light_theme.dart';
 import 'package:efood_multivendor/util/app_constants.dart';
@@ -22,6 +23,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'helper/get_di.dart' as di;
+import 'otp.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
@@ -95,8 +97,9 @@ class MyApp extends StatelessWidget {
             locale: localizeController.locale,
             translations: Messages(languages: languages),
             fallbackLocale: Locale(AppConstants.languages[0].languageCode, AppConstants.languages[0].countryCode),
-            initialRoute: GetPlatform.isWeb ? RouteHelper.getInitialRoute() : RouteHelper.getSplashRoute(orderID),
-            getPages: RouteHelper.routes,
+            // initialRoute: GetPlatform.isWeb ? RouteHelper.getInitialRoute() : RouteHelper.getSplashRoute(orderID),
+            // getPages: RouteHelper.routes,
+            home: HomePage(),
             defaultTransition: Transition.topLevel,
             transitionDuration: Duration(milliseconds: 500),
           );

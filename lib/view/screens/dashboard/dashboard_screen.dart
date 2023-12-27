@@ -86,7 +86,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
       child: Scaffold(
         backgroundColor:  Color(0xffF1F1F1),
         key: _scaffoldKey,
-
         /*  floatingActionButton: ResponsiveHelper.isDesktop(context) ? null : FloatingActionButton(
           elevation: 5,
           backgroundColor: _pageIndex == 2 ?Color(0xFF009f67) : Theme.of(context).cardColor,
@@ -94,7 +93,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
           child: CartWidget(color: _pageIndex == 2 ? Theme.of(context).cardColor : Theme.of(context).disabledColor, size: 30),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,*/
-
         bottomNavigationBar: ResponsiveHelper.isDesktop(context)
             ? SizedBox()
             : BottomAppBar(
